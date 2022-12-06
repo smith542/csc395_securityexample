@@ -7,7 +7,7 @@ jobs:
         image: "circleci/openjdk:8-jdk-browsers"
     steps: 
       - checkout
-      # Add this step - literally copy and paste it into config.yml. Might have a spacing issue here with the ‘-’
+      # Add this step - literally copy and paste it into config.yml. Might have a spacing issue here with the ‘-'
       -
         run:
           command: |
