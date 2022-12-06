@@ -1,5 +1,7 @@
 --- 
 version: 2.1
+orbs:
+  snyk: snyk/snyk@1.4.0
 jobs: 
   build: 
     docker: 
@@ -7,6 +9,7 @@ jobs:
         image: "circleci/openjdk:8-jdk-browsers"
     steps: 
       - checkout
+      - snyk/scan
       # Add this step - literally copy and paste it into config.yml. Might have a spacing issue here with the ‘-'
       -
         run:
